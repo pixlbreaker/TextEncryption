@@ -40,8 +40,8 @@ public class TextEncryption {
             // Decrypts text
             desCipher.init(Cipher.DECRYPT_MODE, myDesKey);
             byte[] textDecrypted = desCipher.doFinal(textEncrypted);
-            s = new String(textDecrypted);
-            System.out.println(s);
+            String s1 = new String(textDecrypted);
+            System.out.println(s1);
             
             // Copies to clipboard
             copy(s);
